@@ -26,6 +26,9 @@ seoMeta:
   # or generate one from the first slide if not found.
   ogImage: auto
   # ogImage: https://cover.sli.dev
+
+addons:
+  - fancy-arrow
 ---
 
 # Python
@@ -332,3 +335,69 @@ None
 </div>
 
 </div>
+
+
+---
+
+<h1 class="!text-orange-400" >Ternary Operator</h1>
+
+
+
+
+###  <logos-javascript /> Javascript
+
+<div data-id="js-box">
+
+```js {all}{class:'!children:text-[1.2rem] !children:leading-6'}
+condition ? valueIfTrue : valueIfFalse
+```
+
+</div>
+
+
+<div class="mt-[2rem]" data-id="py-box">
+
+### <logos-python /> Python 
+
+```py {all}{class:'!children:text-[1.2rem] !children:leading-6'}
+value_if_true if condition else value_if_false
+```
+
+</div>
+
+
+<div class="mt-[1.5rem]">
+
+<h2 class="!text-red-500">Example</h2>
+
+
+```py {all}{class:'!children:text-[1.2rem] !children:leading-6'}
+age = 18
+status = "Adult" if age >= 18 else "Minor"
+print(status)
+```
+
+</div>
+
+<p v-drag="[779,361,25,40]" text-green text-2xl data-id="one">Hi</p>
+
+
+<p v-drag="[816,162,59,40]" text-orange text-2xl  data-id="two">Hello</p>
+
+
+<FancyArrow color="orange" from="[data-id=js-box@(50%,150%)]" to="[data-id=py-box@top]" arc="0.4" />
+
+
+<FancyArrow color="orange" from="[data-id=one@bottom]" to="[data-id=two@left]" arc="-0.1" />
+
+
+---
+
+
+<FancyArrow color="orange" from="[data-id=one@bottom]" to="[data-id=two@left]" arc="-0.1" />
+
+<p v-drag="[247,212,25,40]" text-green text-2xl data-id="one">Hi</p>
+
+
+<p v-drag="[721,120,59,40]" text-orange text-2xl  data-id="two">Hello</p>
+
